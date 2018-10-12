@@ -3,41 +3,64 @@
 @import "libs"
 
 ::placeholder
-	color: #666
-
-::selection
-	background-color: $accent
-	color: #fff
 
 body
-	font-size: 16px
-	min-width: 320px
-	position: relative
-	line-height: 1.65
-	font-family: $default-font
-	overflow-x: hidden
-	color: $text
-	input, textarea
-		border: #666 1px solid
-		outline: none
-		&:focus:required:invalid
-			border-color: red
-		&:required:valid
-			border-color: green
+    header
+      color: #fff
+      background-color: #3f3f3f
 
-.img-responsive
-	display: block
-	max-width: 100%
-	height: auto
-	&.img-width
-		width: 100%
+      .header_top
+        padding: 25px 0px
+        img
+          width: 20px
+          margin-right: 5px
+        p
+          margin: 0px
+          font-size: 18px
+          a
+            color: #fff
+            text-decoration: underline
+            font-size: 13px
+            display: block
 
-.text-center
-	text-align: center
+        .logo
+          img
+            width: 130px
 
-b, strong
-	font-weight: bold
+        .location
 
+        .mail
 
+        .telephone
 
-@import "media" // Always at the end
+      nav
+        background-color: $orange
+        padding: 15px 0px
+        ul
+          width: 100%
+          li
+            display: inline-block
+            a
+              color: #fff
+              font-size: 19px
+
+    .intro
+      background-image: url("https://via.placeholder.com/500x500")
+      .title
+        padding: 70px 0px
+        h1
+          color: #fff
+          font-size: 72px
+        h4
+          font-size: 36px
+
+      .icons
+        img
+          width: 50px
+          margin-right: 10px
+        span
+          text-transform: uppercase
+          font-size: 21px
+
+@import "media"
+// Always at the end
