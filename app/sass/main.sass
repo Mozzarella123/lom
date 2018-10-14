@@ -4,63 +4,126 @@
 
 ::placeholder
 
-body
-    header
-      color: #fff
-      background-color: #3f3f3f
+.bg
+  background:
+    size: cover
+    position: 50% 50%
+    repeat: no-repeat
 
-      .header_top
-        padding: 25px 0px
+body
+  header
+    color: #fff
+    background-color: #3f3f3f
+
+    .header_top
+      padding: 25px 0px
+      img
+        width: 20px
+        margin-right: 5px
+      p
+        margin: 0px
+        font-size: 18px
+        a
+          color: #fff
+          text-decoration: underline
+          font-size: 13px
+          display: block
+
+      .logo
         img
-          width: 20px
-          margin-right: 5px
-        p
-          margin: 0px
-          font-size: 18px
+          width: 130px
+
+      .location
+
+      .mail
+
+      .telephone
+
+    nav
+      background-color: $orange
+      padding: 15px 0px
+      ul
+        width: 100%
+        li
+          display: inline-block
           a
             color: #fff
-            text-decoration: underline
-            font-size: 13px
-            display: block
+            font-size: 19px
 
-        .logo
-          img
-            width: 130px
+  .intro
+    background-image: url("https://via.placeholder.com/500x500")
+    .title
+      padding: 70px 0px
+      h1
+        color: #fff
+        font-size: 72px
+      h4
+        font-size: 36px
 
-        .location
+    .icons
+      img
+        width: 50px
+        margin-right: 10px
+      span
+        text-transform: uppercase
+        font-size: 21px
 
-        .mail
+.scheme
+  @extend .bg
+  background-image: url("/img/bg.png")
+  color: #ffffff
+  .circles
+    counter-reset: circles
+    li
+      list-style: none
+      position: relative
+      &:before
+        counter-increment: circles
+        content: counter(circles)
+        color: $text
+        font-weight: bold
+        background: #ffffff
+        position: absolute
+        right: 25%
+        z-index: 2
+        border-radius: 50%
+        width: 30px
+        line-height: 30px
+        text-align: center
 
-        .telephone
-
-      nav
-        background-color: $orange
-        padding: 15px 0px
-        ul
-          width: 100%
-          li
-            display: inline-block
-            a
-              color: #fff
-              font-size: 19px
-
-    .intro
-      background-image: url("https://via.placeholder.com/500x500")
-      .title
-        padding: 70px 0px
-        h1
-          color: #fff
-          font-size: 72px
-        h4
-          font-size: 36px
-
-      .icons
-        img
-          width: 50px
-          margin-right: 10px
-        span
-          text-transform: uppercase
-          font-size: 21px
+  .one
+    text-align: center
+    .icon
+      margin-bottom: 1rem
+      padding-top: 50px
+      padding-bottom: 50px
+      position: relative
+      $size: 100%
+      .circle
+        position: absolute
+        left: 0
+        right: 0
+        top: 0
+        bottom: 0
+        display: flex
+        align-items: center
+        justify-content: center
+        &:before, &:after
+          position: absolute
+          content: ''
+        &:before
+          background:
+            image: url("/img/gear-wheel.png")
+            size: 100%
+            repeat: no-repeat
+            position: 50% 0
+          width: $size - 30%
+          padding-bottom: $size - 30%
+        &:after
+          width: $size - 55%
+          padding-bottom: $size - 55%
+          border: 4px solid #961933
+          border-radius: 50%
 
 @import "media"
 // Always at the end
