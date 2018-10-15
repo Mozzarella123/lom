@@ -2,6 +2,15 @@
 @import "fonts"
 @import "libs"
 
+.bg
+  background:
+    size: cover
+    position: 50% 50%
+    repeat: no-repeat
+
+header
+  color: #fff
+  background-color: #3f3f3f
 ::placeholder
 
 .bg
@@ -19,6 +28,7 @@ body
 
   .header_top
     padding: 25px 0px
+    line-height: 1em
     img
       width: 20px
       margin-right: 5px
@@ -41,34 +51,86 @@ body
 
     .telephone
 
-    nav
-      background-color: $orange
-      padding: 15px 0px
-      ul
-        width: 100%
-        li
-          display: inline-block
-          a
-            color: #fff
-            font-size: 19px
+  nav
+    background-color: $orange
+    padding: 15px 0px
+    .nav_menu
+      width: 100%
 
-  .intro
-    background-image: url("https://via.placeholder.com/500x500")
-    .title
-      padding: 70px 0px
-      h1
-        color: #fff
-        font-size: 72px
-      h4
-        font-size: 36px
+      .nav-item
+        display: inline-block
 
-    .icons
-      img
-        width: 50px
-        margin-right: 10px
-      span
-        text-transform: uppercase
-        font-size: 21px
+        .nav-link
+          color: #fff
+          font-size: 19px
+
+.intro
+  background-image: url("https://via.placeholder.com/500x500")
+  .title
+    padding-top: 50px
+    padding-bottom: 65px
+    color: #fff
+    h1
+      font-size: 72px
+    h4
+      font-size: 36px
+
+  .icons
+    padding-bottom: 70px
+    img
+      margin-right: 25px
+    span
+      text-transform: uppercase
+      font-size: 21px
+.lead-form
+  padding-bottom: 40px
+  font-size: 16px
+  span
+    font-size: 30px
+  .form-inline
+    padding-top: 20px
+    .row
+      padding: 20px 20px
+      border: 1px solid
+      .form-group
+        width: 330px
+        .input-file
+          padding: 12px !important
+        .form-control
+          background-color: #fff
+          color: #3a3a3a
+          border: 0px
+          border-radius: 0px
+          padding: 15px 20px
+          width: 100%
+        .btn
+          background-color: $orange
+          color: #fff
+          border-radius: 0px
+          border: 0px
+          padding: 15px 20px
+          text-transform: uppercase
+          width: 100%
+          @extend .shadow_around
+.products
+  padding-top: 20px
+  padding-bottom: 40px
+  .text-block
+    h1
+      font-size: 36px
+      margin-right: 45px
+      line-height: 1em
+    span
+      font-size: 118px
+  .one
+    padding-bottom: 20px
+    .img
+      &:hover
+
+
+
+    h3
+      font-size: 23px
 
 .scheme
   @extend .bg
@@ -128,5 +190,71 @@ body
           border-radius: 50%
 #map
   height: 500px
+
+.scheme
+  @extend .bg
+  background-image: url("/img/bg.png")
+  color: #fff
+  padding: 70px 0px
+  h2
+    margin: 0px
+  .circles
+    padding-left: 0px
+    padding-top: 70px
+    margin: 0px
+    counter-reset: circles
+    li
+      list-style: none
+      position: relative
+      &:before
+        counter-increment: circles
+        content: counter(circles)
+        color: $text
+        font-weight: bold
+        background: #fff
+        position: absolute
+        right: 25%
+        z-index: 2
+        border-radius: 50%
+        width: 30px
+        line-height: 30px
+        text-align: center
+      h3
+        margin: 0px
+
+  .one
+    text-align: center
+    .icon
+      margin-bottom: 1rem
+      padding-top: 50px
+      padding-bottom: 50px
+      position: relative
+      $size: 100%
+      .circle
+        position: absolute
+        left: 0
+        right: 0
+        top: 0
+        bottom: 0
+        display: flex
+        align-items: center
+        justify-content: center
+        &:before, &:after
+          position: absolute
+          content: ''
+        &:before
+          background:
+            image: url("/img/gear-wheel.png")
+            size: 100%
+            repeat: no-repeat
+            position: 50% 0
+          width: $size - 30%
+          padding-bottom: $size - 30%
+        &:after
+          width: $size - 55%
+          padding-bottom: $size - 55%
+          border: 4px solid #961933
+          border-radius: 50%
+
 @import "media"
 // Always at the end

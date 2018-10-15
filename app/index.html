@@ -35,26 +35,27 @@
         <div class="row header_top d-flex align-items-center">
 
             <div class="logo col-md-3">
-                <img src="https://via.placeholder.com/350x100" id="logotype" alt="">
+                <img src="https://via.placeholder.com/150x60" id="logotype" alt="">
             </div>
 
             <div class="location col-md-3 text-right">
-                <p><img src="https://via.placeholder.com/10x10" alt="">г. Санкт-Петербург<br>ул. Одоевского, 25</p>
+                <p><img src="https://via.placeholder.com/15x20" alt="">г. Санкт-Петербург<br>ул. Одоевского, 25</p>
             </div>
 
             <div class="mail col-md-3 text-right">
-                <p><img src="https://via.placeholder.com/10x10" alt="">пример@gmail.com<a href="#">Написать
+                <p><img src="https://via.placeholder.com/15x20" alt="">пример@gmail.com<a href="#">Написать
                     письмо</a></p>
             </div>
 
             <div class="telephone col-md-3 text-right">
-                <p><img src="https://via.placeholder.com/10x10" alt="">+7 (812) 365-45-98<a href="#">Заказать
+                <p><img src="https://via.placeholder.com/15x20" alt="">+7 (812) 365-45-98<a href="#">Заказать
                     звонок</a></p>
             </div>
 
         </div>
     </div>
 
+    <!-- NAVIGATION -->
     <nav>
         <div class="container">
             <div class="row d-flex justify-content-center align-items-center">
@@ -96,16 +97,41 @@
         <div class="row icons">
 
             <div class="one col d-flex justify-content-center align-items-center">
-                <img src="https://via.placeholder.com/30x30" alt=""><span>Дорого</span>
+                <img src="https://via.placeholder.com/55x55" alt=""><span>Дорого</span>
             </div>
 
             <div class="one col d-flex justify-content-center align-items-center">
-                <img src="https://via.placeholder.com/30x30" alt=""><span>Честно</span>
+                <img src="https://via.placeholder.com/45x50" alt=""><span>Честно</span>
             </div>
 
             <div class="one col d-flex justify-content-center align-items-center">
-                <img src="https://via.placeholder.com/30x30" alt=""><span>Быстро</span>
+                <img src="https://via.placeholder.com/70x50" alt=""><span>Быстро</span>
             </div>
+
+        </div>
+
+        <div class="lead-form text-center">
+
+            <span class="">Закажите бесплатную оценку вашего лома по фотографии</span>
+
+            <form class="form-inline d-flex justify-content-center w-100" action="">
+
+                <div class="row">
+                    <div class="form-group col-md-4">
+                        <input type="tel" placeholder="Ваш телефон" class="form-control text-left">
+                    </div>
+
+                    <!-- ДОБАВИЛ P-12 У INPUT'А (INPUT-FILE) В SASS, ДЛЯ НУЖНОЙ ВЫСОТЫ -->
+                    <div class="form-group col-md-4">
+                        <input type="file" name="file" id="file" class="input-file form-control">
+                    </div>
+
+                    <div class="form-group col-md-4">
+                        <button class="btn" type="submit">Оценить</button>
+                    </div>
+                </div>
+
+            </form>
 
         </div>
 
@@ -151,22 +177,90 @@
 
 <!-- PRODUCTS) -->
 <section class="products">
+
     <div class="container">
-        <div class="text-block"></div>
-        <div class="row">
-            <div class="col-lg-3 one">
-                <div class="img"></div>
-                <h3 class="title">Габаритный лом</h3><span class="caption">до 17500 за тонну</span></div>
-            <div class="col-lg-3 one">
-                <div class="img"></div>
-                <h3 class="title">Габаритный лом</h3><span class="caption">до 17500 за тонну</span></div>
-            <div class="col-lg-3 one">
-                <div class="img"></div>
-                <h3 class="title">Габаритный лом</h3><span class="caption">до 17500 за тонну</span></div>
-            <div class="col-lg-3 one">
-                <div class="img"></div>
-                <h3 class="title">Габаритный лом</h3><span class="caption">до 17500 за тонну</span></div>
+
+        <div class="text-block text-left d-flex justify-content-end align-items-center">
+            <h1>Работаем от<br> килограмм</h1>
+            <span>300</span>
         </div>
+
+        <!-- ИСПОЛЬЗОВАТЬ HOVER? ДЛЯ РАМКИ ПРИ НАВЕДЕНИИ -->
+        <div class="row d-flex justify-content-center">
+
+            <div class="col-lg-3 one p-0">
+                <div class="img">
+                    <img src="https://via.placeholder.com/270x365" alt="">
+                </div>
+
+                <h3 class="title">Габаритный лом</h3><span class="caption">до 17500 Р за тонну</span>
+            </div>
+
+            <div class="col-lg-3 one p-0">
+                <div class="img">
+                    <img src="https://via.placeholder.com/270x365" alt="">
+                </div>
+
+                <h3 class="title">Габаритный лом</h3><span class="caption">до 17500 Р за тонну</span>
+            </div>
+
+            <div class="col-lg-3 one p-0">
+                <div class="img">
+                    <img src="https://via.placeholder.com/270x365" alt="">
+                </div>
+
+                <h3 class="title">Габаритный лом</h3><span class="caption">до 17500 Р за тонну</span>
+            </div>
+
+            <div class="col-lg-3 one p-0">
+                <div class="img">
+                    <img src="https://via.placeholder.com/270x365" alt="">
+                </div>
+
+                <h3 class="title">Габаритный лом</h3><span class="caption">до 17500 Р за тонну</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="scheme">
+    <div class="container">
+        <h2>Схема работы</h2>
+        <ol class="row circles">
+            <li class="one col">
+                <div class="icon"><img src="/img/money.png" alt="">
+                    <div class="circle"></div>
+                </div>
+                <h3>Прием металлолома</h3>
+            </li>
+            <li class="one col">
+                <div class="icon"><img src="/img/money.png" alt="">
+                    <div class="circle"></div>
+                </div>
+                <h3>Прием металлолома</h3>
+            </li>
+            <li class="one col">
+                <div class="icon"><img src="/img/money.png" alt="">
+                    <div class="circle"></div>
+                </div>
+                <h3>Прием металлолома</h3>
+            </li>
+            <li class="one col">
+                <div class="icon"><img src="/img/money.png" alt="">
+                    <div class="circle"></div>
+                </div>
+                <h3>Прием металлолома</h3>
+            </li>
+            <li class="one col">
+                <div class="icon"><img src="/img/money.png" alt="">
+                    <div class="circle"></div>
+                </div>
+                <h3>Прием металлолома</h3>
+            </li>
+        </ol>
     </div>
 </section>
 
