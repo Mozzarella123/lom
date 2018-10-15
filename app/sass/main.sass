@@ -15,6 +15,19 @@ h2
     position: 50% 50%
     repeat: no-repeat
 
+.btn-shadow
+  -webkit-box-shadow: 0px 0px 70px -5px $orange
+  -moz-box-shadow: 0px 0px 70px -5px $orange
+  box-shadow: 0px 0px 70px -5px $orange
+
+.card-shadow
+  -webkit-box-shadow: 0px 5px 50px -15px $orange
+  -moz-box-shadow: 0px 5px 50px -15px $orange
+  box-shadow: 0px 5px 50px -15px $orange
+
+.text-shadow
+  text-shadow: 0px 10px 35px $orange
+
 .lead-form
   padding-bottom: 40px
   font-size: 16px
@@ -99,7 +112,7 @@ header
     color: #fff
     h1
       font-size: 72px
-    h4
+    span
       font-size: 36px
 
   .icons
@@ -114,30 +127,57 @@ header
 .products
   position: relative
   padding-top: 30px
-  padding-bottom: 70px
+
   .bg_auto
     position: absolute
     bottom: 17%
     left: 2%
 
   .text-block
-    h1
+    .caption
       font-size: 36px
       margin-right: 45px
       line-height: 1em
-    span
+    .number
       font-size: 118px
       color: $orange
-      @extend .all-shadow
+      @extend .text-shadow
 
   .one
     padding-bottom: 20px
     .img
       padding-bottom: 15px
-      &:hover
 
+      img
+        max-width: 100%
+        height: auto
     h3
       font-size: 23px
+
+.order
+  padding-top: 25px
+  padding-bottom: 45px
+  .number
+
+    .text
+      font-size: 36px
+    .num
+      font-size: 60px
+      color: $orange
+      @extend .text-shadow
+
+  .order_cards
+    padding-top: 100px
+    .order_card
+      margin-right: 25px
+      border: 1px solid $gray
+      padding: 0px 5px
+      @extend .card-shadow
+      img
+        padding: 10px 0px
+      p
+        font-size: 18px
+        padding-left: 10px
 
 .scheme
   @extend .bg
@@ -233,7 +273,6 @@ footer
         font-size: 16px
         display: block
         color: #fff
-
 
 @import "media"
 // Always at the end
