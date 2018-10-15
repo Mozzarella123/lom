@@ -7,7 +7,11 @@
     size: cover
     position: 50% 50%
     repeat: no-repeat
-
+section
+  padding-top: 70px
+  padding-bottom: 70px
+h2
+  font-weight: bold
 header
   color: #fff
   background-color: #3f3f3f
@@ -191,70 +195,9 @@ body
 #map
   height: 500px
 
-.scheme
-  @extend .bg
-  background-image: url("/img/bg.png")
-  color: #fff
-  padding: 70px 0px
-  h2
-    margin: 0px
-  .circles
-    padding-left: 0px
-    padding-top: 70px
-    margin: 0px
-    counter-reset: circles
-    li
-      list-style: none
-      position: relative
-      &:before
-        counter-increment: circles
-        content: counter(circles)
-        color: $text
-        font-weight: bold
-        background: #fff
-        position: absolute
-        right: 25%
-        z-index: 2
-        border-radius: 50%
-        width: 30px
-        line-height: 30px
-        text-align: center
-      h3
-        margin: 0px
-
-  .one
-    text-align: center
-    .icon
-      margin-bottom: 1rem
-      padding-top: 50px
-      padding-bottom: 50px
-      position: relative
-      $size: 100%
-      .circle
-        position: absolute
-        left: 0
-        right: 0
-        top: 0
-        bottom: 0
-        display: flex
-        align-items: center
-        justify-content: center
-        &:before, &:after
-          position: absolute
-          content: ''
-        &:before
-          background:
-            image: url("/img/gear-wheel.png")
-            size: 100%
-            repeat: no-repeat
-            position: 50% 0
-          width: $size - 30%
-          padding-bottom: $size - 30%
-        &:after
-          width: $size - 55%
-          padding-bottom: $size - 55%
-          border: 4px solid #961933
-          border-radius: 50%
+.girlform
+  img
+    position: absolute
 
 @import "media"
 // Always at the end
