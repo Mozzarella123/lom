@@ -118,7 +118,7 @@
 
                 <div class="row">
                     <div class="form-group col-md-4">
-                        <input type="tel" placeholder="Ваш телефон" class="form-control text-left">
+                        <input type="tel" placeholder="Ваш телефон" class="tel form-control text-left">
                     </div>
 
                     <!-- ДОБАВИЛ P-12 У INPUT'А (INPUT-FILE) В SASS, ДЛЯ НУЖНОЙ ВЫСОТЫ -->
@@ -206,22 +206,26 @@
 
                 <div class="col-md-3">
                     <div class="wrapper"><img src="img\wallet.png" alt="">
-                        <p>Деньги наличными на месте</p></div>
+                        <p>Деньги наличными на месте</p>
+                    </div>
                 </div>
 
                 <div class="col-md-3">
                     <div class="wrapper"><img src="img\libra.png" alt="">
-                        <p>Взвешиваем при Вас</p></div>
+                        <p>Взвешиваем при Вас</p>
+                    </div>
                 </div>
 
                 <div class="col-md-3">
                     <div class="wrapper"><img src="img\truck.png" alt="">
-                        <p>Бесплатный вывоз до 4 тонн</p></div>
+                        <p>Бесплатный вывоз до 4 тонн</p>
+                    </div>
                 </div>
 
                 <div class="col-md-3">
                     <div class="wrapper"><img src="img\cargo.png" alt="">
-                        <p>Погрузка нашими силами</p></div>
+                        <p>Погрузка нашими силами</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -253,35 +257,50 @@
 <!-- TRANSPORT -->
 <section class="transport">
     <div class="container">
+
         <h2>Выберите подходящий транспорт</h2>
-        <div class="row">
-            <div class="col-md-4"><img src="" alt="">
-                <h3>Газель</h3>
-                <ul>
-                    <li><span class="price">от 1000 р</span></li>
-                    <li></li>
-                    <li></li>
+
+        <div class="row d-flex align-items-end">
+
+            <div class="tr_item col-md-4 text-center">
+                <img class="tr_img" src="img\transport_1.png" alt="">
+                <h3>Усиленная газель</h3>
+
+                <ul class="tr_text">
+                    <li><span class="price">от 1200 Р / час</span></li>
+                    <li><span>до 3 тонн</span></li>
+                    <li><span>кузов 9м3</span></li>
                 </ul>
+
                 <button class="btn">Заказать</button>
             </div>
-            <div class="col-md-4"><img src="" alt="">
-                <h3>Газель</h3>
-                <ul>
-                    <li><span class="price">от 1000 р</span></li>
-                    <li></li>
-                    <li></li>
+
+            <div class="tr_item col-md-4 text-center">
+                <img class="tr_img" src="img\transport_2.png" alt="">
+                <h3>Ломовоз манипулятор</h3>
+
+                <ul class="tr_text">
+                    <li><span class="price">от 1700 Р / час</span></li>
+                    <li><span>до 20 тонн</span></li>
+                    <li><span>кузов до 35м3</span></li>
                 </ul>
+
                 <button class="btn">Заказать</button>
             </div>
-            <div class="col-md-4"><img src="" alt="">
-                <h3>Газель</h3>
-                <ul>
-                    <li><span class="price">от 1000 р</span></li>
-                    <li></li>
-                    <li></li>
+
+            <div class="tr_item col-md-4 text-center">
+                <img class="tr_img" src="img\transport_3.jpg" alt="">
+                <h3>Пухто мультилифт</h3>
+
+                <ul class="tr_text">
+                    <li><span class="price">от 2200 Р / час</span></li>
+                    <li><span>до 20 тонн</span></li>
+                    <li><span>кузов до 35м3</span></li>
                 </ul>
+
                 <button class="btn">Заказать</button>
             </div>
+
         </div>
     </div>
 </section>
@@ -396,26 +415,26 @@
     <div class="container">
         <div class="row">
 
-            <div class="col-md-6">
+            <div class="col-md-7">
 
-                <h2>Готовы сделать закзаз?</h2>
-                <p>Оставьте свои контакты, наш специалист свяжется с вами для уточнения деталей</p>
+                <h2>Готовы сделать заказ?</h2>
+                <p class="col-md-11 p-0">Оставьте свои контакты, наш специалист свяжется с вами для уточнения деталей</p>
 
                 <form action="" class="form-inline">
+                    <div class="row w-100">
+                        <div class="form-group col-md-6">
+                            <input type="text" class="form-control" placeholder="Ваш телефон">
+                        </div>
 
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Ваш телефон">
+                        <div class="form-group col-md-6">
+                            <button class="btn">Сдать металлолом</button>
+                        </div>
                     </div>
-
-                    <div class="form-group">
-                        <button type="text" class="form-control btn">Сдать металлолом</button>
-                    </div>
-
                 </form>
 
             </div>
 
-            <div class="col-md-6">
+            <div class="col">
                 <img src="/img/girl.png" alt="">
             </div>
 
@@ -425,7 +444,9 @@
 
 <!-- MAP -->
 <section class="map">
-    <div id="map"></div>
+    <div id="map">
+
+    </div>
 </section>
 
 <!-- FOOTER -->
