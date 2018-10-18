@@ -58,7 +58,7 @@
     <!-- NAVIGATION -->
     <nav>
         <div class="container">
-            <div class="row d-flex justify-content-center align-items-center">
+            <div class="row d-flex align-items-center">
 
                 <ul class="nav_menu d-flex justify-content-between m-0 p-0">
                     <li class="nav-item">
@@ -118,7 +118,7 @@
 
                 <div class="row">
                     <div class="form-group col-md-4">
-                        <input type="tel" placeholder="Ваш телефон" class="form-control text-left">
+                        <input type="tel" placeholder="Ваш телефон" class="tel form-control text-left">
                     </div>
 
                     <!-- ДОБАВИЛ P-12 У INPUT'А (INPUT-FILE) В SASS, ДЛЯ НУЖНОЙ ВЫСОТЫ -->
@@ -140,7 +140,7 @@
 <!-- PRODUCTS) -->
 <section class="products">
 
-    <div class="bg_auto">
+    <div class="bg_img">
         <img src="/img/auto.png" alt="">
     </div>
 
@@ -185,9 +185,14 @@
 
 <!-- ORDER -->
 <section class="order">
+
+    <div class="bg_img">
+        <img src="/img/worker.png" alt="">
+    </div>
+
     <div class="container">
 
-        <div class="col-md-6 p-0 text-left">
+        <div class="col-md-7 p-0 text-left">
 
             <div class="number text-left">
                 <span class="text">Закажите вызов лома прямо сейчас по телефону</span>
@@ -195,133 +200,237 @@
             </div>
 
         </div>
+
         <div class="col-md-10">
             <div class="row order_cards">
 
-                <div class="order_card col-md-3">
-                    <div class="wrapper"><img src="img\wallet.png" alt="">
-                        <p>Деньги наличными на месте</p></div>
+                <div class="col-md-3">
+                    <div class="wrapper">
+                        <img src="img\wallet.png" alt="">
+                        <p>Деньги наличными на месте</p>
+                    </div>
                 </div>
 
-                <div class="order_card col-md-3">
-                    <div class="wrapper"><img src="img\libra.png" alt="">
-                        <p>Взвешиваем при Вас</p></div>
+                <div class="col-md-3">
+                    <div class="wrapper">
+                        <img src="img\libra.png" alt="">
+                        <p>Взвешиваем при Вас</p>
+                    </div>
                 </div>
 
-                <div class="order_card col-md-3">
-                    <div class="wrapper"><img src="img\truck.png" alt="">
-                        <p>Бесплатный вывоз до 4 тонн</p></div>
+                <div class="col-md-3">
+                    <div class="wrapper">
+                        <img src="img\truck.png" alt="">
+                        <p>Бесплатный вывоз до 4 тонн</p>
+                    </div>
                 </div>
 
-                <div class="order_card col-md-3">
-                    <div class="wrapper"><img src="img\cargo.png" alt="">
-                        <p>Погрузка нашими силами</p></div>
-
+                <div class="col-md-3">
+                    <div class="wrapper">
+                        <img src="img\cargo.png" alt="">
+                        <p>Погрузка нашими силами</p>
+                    </div>
                 </div>
             </div>
         </div>
 
-
     </div>
 </section>
+
+<!-- LEAD -->
 <section class="lead">
     <div class="container">
-        <div class="col-md-11 text-center">
-            <h2>Вывозим лом на своей технике</h2>
-            <p>Каждый день по будням без выходных</p>
-            <b>Мы работаем - вы отдыхаете</b>
-            <button class="btn">Заказать</button>
+        <div class="row d-flex justify-content-center">
+
+            <div class="content col-md-11">
+                <div class="row d-flex justify-content-center">
+                    <h2>Вывозим лом на своей технике</h2>
+                    <p>Каждый день по будням без выходных</p>
+                    <b>Мы работаем - вы отдыхаете</b>
+                </div>
+
+                <div class="row d-flex justify-content-center">
+                    <button class="btn">Заказать</button>
+                </div>
+            </div>
         </div>
+
     </div>
 </section>
+
+<!-- TRANSPORT -->
 <section class="transport">
     <div class="container">
+
         <h2>Выберите подходящий транспорт</h2>
-        <div class="row">
-            <div class="col-md-4"><img src="" alt="">
-                <h3>Газель</h3>
-                <ul>
-                    <li><span class="price">от 1000 р</span></li>
-                    <li></li>
-                    <li></li>
+
+        <div class="row d-flex align-items-end">
+
+            <div class="tr_item col-md-4 text-center">
+                <img class="tr_img" src="img\transport_1.png" alt="">
+                <h3>Усиленная газель</h3>
+
+                <ul class="tr_text">
+                    <li><span class="price">от 1200 Р / час</span></li>
+                    <li><span>до 3 тонн</span></li>
+                    <li><span>кузов 9м3</span></li>
                 </ul>
+
                 <button class="btn">Заказать</button>
             </div>
-            <div class="col-md-4"><img src="" alt="">
-                <h3>Газель</h3>
-                <ul>
-                    <li><span class="price">от 1000 р</span></li>
-                    <li></li>
-                    <li></li>
+
+            <div class="tr_item col-md-4 text-center">
+                <img class="tr_img" src="img\transport_2.png" alt="">
+                <h3>Ломовоз манипулятор</h3>
+
+                <ul class="tr_text">
+                    <li><span class="price">от 1700 Р / час</span></li>
+                    <li><span>до 20 тонн</span></li>
+                    <li><span>кузов до 35м3</span></li>
                 </ul>
+
                 <button class="btn">Заказать</button>
             </div>
-            <div class="col-md-4"><img src="" alt="">
-                <h3>Газель</h3>
-                <ul>
-                    <li><span class="price">от 1000 р</span></li>
-                    <li></li>
-                    <li></li>
+
+            <div class="tr_item col-md-4 text-center">
+                <img class="tr_img" src="img\transport_3.jpg" alt="">
+                <h3>Пухто мультилифт</h3>
+
+                <ul class="tr_text">
+                    <li><span class="price">от 2200 Р / час</span></li>
+                    <li><span>до 20 тонн</span></li>
+                    <li><span>кузов до 35м3</span></li>
                 </ul>
+
                 <button class="btn">Заказать</button>
             </div>
+
         </div>
     </div>
 </section>
-<section class="metallolom">
+
+<!-- SCRAP-METAL -->
+<section class="scrap_metal">
     <div class="container">
         <h2>Сдать автомобиль на металлолом</h2>
+
         <div class="row">
-            <div class="col-md-6">
-                <div class="img"></div>
-                <h3>Lorem ipsum dolor sit.</h3>
+
+            <div class="one col-md-6 text-right">
+                <div class="img">
+                    <img src="img/sm_1.jpg" alt="">
+                </div>
+
+                <h3>Вывезем крупную технику на металлолом</h3>
             </div>
-            <div class="col-md-6">
-                <div class="img"></div>
-                <h3>Lorem ipsum dolor sit.</h3>
+
+            <div class="one col-md-6 text-left">
+                <h3>Заберем машина на мателлолом с места стоянки</h3>
+
+                <div class="img">
+                    <img src="img/sm_2.jpg" alt="">
+                </div>
             </div>
+
         </div>
     </div>
 </section>
-<section>
+
+<!-- ASSESSMENT -->
+<sectin class="assessment">
     <div class="container">
-        <h2>Lorem ipsum dolor sit.</h2>
-        <p>Lorem ipsum dolor sit amet.</p>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="wrapper">
-                    <h3>lorem</h3>
+        <div class="lead-form text-center">
+
+            <span class="">Закажите бесплатную оценку вашего лома по фотографии</span>
+
+            <form class="form-inline d-flex justify-content-center w-100" action="">
+
+                <div class="row">
+                    <div class="form-group col-md-4">
+                        <input type="tel" placeholder="Ваш телефон" class="tel form-control text-left">
+                    </div>
+
+                    <!-- ДОБАВИЛ P-12 У INPUT'А (INPUT-FILE) В SASS, ДЛЯ НУЖНОЙ ВЫСОТЫ -->
+                    <div class="form-group col-md-4">
+                        <input type="file" name="file" id="file" class="input-file form-control">
+                    </div>
+
+                    <div class="form-group col-md-4">
+                        <button class="btn" type="submit">Оценить</button>
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div class="wrapper">
-                    <h3>lorem</h3>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="wrapper">
-                    <h3>lorem</h3>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="wrapper">
-                    <h3>lorem</h3>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="wrapper">
-                    <h3>lorem</h3>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="wrapper">
-                    <h3>lorem</h3>
-                </div>
-            </div>
+
+            </form>
+
         </div>
-        <button class="btn">Узнать цену на демонтаж</button>
+
+    </div>
+</sectin>
+
+<!-- DISMANTLING -->
+<section class="dismantling">
+    <div class="container text-left">
+        <h2>Бережный демонтаж от 3 тонн</h2>
+        <p>Стоимость работ зависит от объема и типа материалов</p>
+
+        <div class="row">
+
+            <div class="one col-md-4">
+                <div class="wrapper" style="background-image: url('/img/dismantling_1.jpg')">
+                    <div class="description text-center">
+                        <h3>ЖД пути</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="one col-md-4">
+                <div class="wrapper" style="background-image: url('/img/dismantling_2.jpg')">
+                    <div class="description text-center" id="h3">
+                        <h3>Металлоконструкции</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="one col-md-4">
+                <div class="wrapper" style="background-image: url('/img/dismantling_3.jpg')">
+                    <div class="description text-center">
+                        <h3>Корабли</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="one col-md-4">
+                <div class="wrapper" style="background-image: url('/img/dismantling_4.jpg')">
+                    <div class="description text-center">
+                        <h3>Станки</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="one col-md-4">
+                <div class="wrapper" style="background-image: url('/img/dismantling_5.jpg')">
+                    <div class="description text-center">
+                        <h3>Башенные краны</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="one col-md-4">
+                <div class="wrapper" style="background-image: url('/img/dismantling_6.jpg')">
+                    <div class="description text-center">
+                        <h3>Оборудование</h3>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row d-flex justify-content-center">
+            <button class="btn">Уточнить цену на демонтаж</button>
+        </div>
+
     </div>
 </section>
+
 <!-- SCHEME -->
 <section class="scheme">
 
@@ -374,26 +483,27 @@
     <div class="container">
         <div class="row">
 
-            <div class="col-md-6">
+            <div class="col-md-7">
 
-                <h2>Готовы сделать закзаз?</h2>
-                <p>Оставьте свои контакты, наш специалист свяжется с вами для уточнения деталей</p>
+                <h2>Готовы сделать заказ?</h2>
+                <p class="col-md-11 p-0">Оставьте свои контакты, наш специалист свяжется с вами для уточнения
+                    деталей</p>
 
                 <form action="" class="form-inline">
+                    <div class="row w-100">
+                        <div class="form-group col-md-6">
+                            <input type="text" class="form-control" placeholder="Ваш телефон">
+                        </div>
 
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Ваш телефон">
+                        <div class="form-group col-md-6">
+                            <button class="btn">Сдать металлолом</button>
+                        </div>
                     </div>
-
-                    <div class="form-group">
-                        <button type="text" class="form-control">Сдать металлолом</button>
-                    </div>
-
                 </form>
 
             </div>
 
-            <div class="col-md-6">
+            <div class="col">
                 <img src="/img/girl.png" alt="">
             </div>
 
@@ -401,8 +511,12 @@
     </div>
 </section>
 
+<!-- MAP -->
 <section class="map">
-    <div id="map"></div>
+    <div id="map">
+        <script type="text/javascript" charset="utf-8" async
+                src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A2d44c9989725e27a6b4b7fc9981aefbd7e29bbe95be53c9f7303b76139f10a10&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=true%22%3E"></script>
+    </div>
 </section>
 
 <!-- FOOTER -->
