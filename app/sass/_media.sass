@@ -8,8 +8,6 @@
   .products
     .bg_img
       bottom: 17%
-      img
-        max-width: 90%
   .scheme
     .circles
       li
@@ -30,10 +28,43 @@
 
 // >=992px
 +media-breakpoint-down(md)
+
   .intro
     .title
       h1
         font-size: 50px
+  .products
+    .bg_img
+      display: none
+  .order
+    .bg_img
+      right: -10%
+      width: 50%
+      img
+        max-width: 100%
+    .number
+      .text
+        font-size: 25px
+      .num
+        font-size: 40px
+    .order_cards
+      padding-top: 10px
+      .one
+        margin-bottom: 15px
+  .transport
+    .tr_item
+      h3
+        font-size: 18px
+      .tr_text
+        .price
+          font-size: 16px
+  .scheme
+    .circles
+      .one
+        &:nth-child(4),&:nth-child(5)
+          display: none
+  footer
+
 // ≥768px
 +media-breakpoint-down(sm)
 
