@@ -70,7 +70,44 @@
 
 // ≥576px
 +media-breakpoint-down(xs)
-
+  header
+    .header_top
+      display: none
+    nav
+      background: #fff
+      color: red
+  .intro
+    .icons
+      flex-direction: column
+      .one
+        flex-basis: auto
+        margin-bottom: 20px
+  .scheme
+    .circles
+      flex-wrap: wrap
+      li:before
+        font-size: 20px
+        width: 50px
+        line-height: 50px
+        top: -30px
+      .one
+        flex-basis: 100%
+        max-width: 320px
+        margin: auto
+        margin-bottom: 3rem
+        .icon
+          margin-bottom: 3rem
+  footer
+    .nav_menu
+      .nav-item
+        display: block
+        .nav-link
+          margin-right: 0
+          margin-bottom: 10px
+    .row
+      div
+        justify-content: center
+        text-align: center
 
 /*==========  Mobile First  ==========*/
 
