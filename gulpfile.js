@@ -29,10 +29,10 @@ gulp.task('browser-sync', function() {
 
 gulp.task('styles', function() {
 	return gulp.src('app/'+syntax+'/**/*.'+syntax+'')
-	.pipe(plugins.sass({ outputStyle: 'expanded' }).on("error", plugins.notify.onError()))
+	.pipe(plugins.sass({ outputStyle: 'compact' }).on("error", plugins.notify.onError()))
 	.pipe(plugins.rename({ suffix: '.min', prefix : '' }))
 	.pipe(plugins.autoprefixer(['last 15 versions']))
-	.pipe(plugins.cleanCss( {level: { 1: { specialComments: 0 } } })) // Opt., comment out when debugging
+	//.pipe(plugins.cleanCss( {level: { 1: { specialComments: 0 } } })) // Opt., comment out when debugging
 	.pipe(gulp.dest('app/css'))
 	.pipe(plugins.browserSync.stream())
 });
@@ -40,6 +40,7 @@ gulp.task('styles', function() {
 gulp.task('js', function() {
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',
+		'app/libs/bootstrap/js/bootstrap.js',
 		'app/js/common.js', // Always at the end
 		])
 	.pipe(plugins.concat('scripts.min.js'))

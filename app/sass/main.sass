@@ -2,6 +2,49 @@
 @import "fonts"
 @import "libs"
 
+.input-file
+  width: 0.1px
+  height: 0.1px
+  opacity: 0
+  overflow: hidden
+  position: absolute
+  z-index: -1
+
+
+.input-file + label
+  @extend .form-control
+  &:before
+    content: url("/img/file.png")
+    margin-right: 15px
+/* 10px 20px */
+
+
+.no-js .input-file + label
+  display: none
+
+
+.input-file:focus + label,
+.input-file.has-focus + label
+  outline: 1px dotted #000
+  outline: -webkit-focus-ring-color auto 5px
+
+
+.input-file + label *
+/* pointer-events: none */
+/* in case of FastClick lib use */
+
+
+.input-file + label svg
+  width: 1em
+  height: 1em
+  vertical-align: middle
+  fill: currentColor
+  margin-top: -0.25em
+  /* 4px */
+  margin-right: 0.25em
+/* 4px */
+
+
 //COMMON PARAMETERS
 body
   font-family: opensans
@@ -79,8 +122,7 @@ header
     line-height: 1em
     font-weight: 600
     img
-      width: 20px
-      margin-right: 5px
+      margin-right: 10px
     p
       margin: 0px
       font-size: 18px
@@ -204,6 +246,7 @@ header
 
 //ORDER
 .order
+  overflow: hidden
   position: relative
   padding-top: 35px
   padding-bottom: 45px
@@ -217,6 +260,8 @@ header
 
   .number
     font-weight: 800
+    span
+      display: block
     .text
       font-size: 36px
       line-height: 0.9em
@@ -232,13 +277,12 @@ header
     .wrapper
       border: 1px solid #e5e3e2
       background-color: #fff
-      padding-left: 5px
       height: 100%
-      padding-left: 10px
+      padding-left: 15px
       padding-right: 10px
       @extend .box-shadow
       img
-        padding: 10px 0px
+        padding: 15px 0px
       p
         font-size: 18px
 
@@ -335,8 +379,12 @@ header
         height: auto
 //ASSESSMENT
 .assessment
+  padding-top: 40px
   .lead-form
     padding-bottom: 65px
+    span
+      color: #212529
+      font-size: 30px
   .form-control
     border: 1px solid #e5e3e2
     width: 100%
@@ -355,6 +403,8 @@ header
     .wrapper
       padding-bottom: 100%
       width: 100%
+      position: relative
+      overflow: hidden
       @extend .bg
       #h3
         padding: 10px 20px
@@ -444,6 +494,7 @@ header
 //GIRL-FORM
 .girl-form
   padding-top: 60px
+  overflow: hidden
   padding-bottom: 205px
   img
     position: absolute
@@ -479,6 +530,8 @@ footer
         color: #fff
   .telephone
     font-weight: 600
+    display: flex
+    justify-content: flex-end
     p
       margin: 0px
       font-size: 19px
